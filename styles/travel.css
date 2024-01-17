@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+/* shared styles */
+.color_btn {
+  background-color: #ff5400;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  color: #fff;
+}
+.color_btn::placeholder {
+  color: #fff;
+}
+span {
+  color: #ff5400;
+}
+/* Nav styles from here */
+.nav_container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.nav_container .nav_heading_details {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding-left: 135px;
+  color: #131318;
+}
+.nav_container .nav_heading_details .nav_img {
+  padding: 0 20px;
+}
+.nav_container .nav_navbar {
+  width: 50%;
+  text-align: center;
+}
+.nav_container .nav_navbar a {
+  text-decoration: none;
+  color: #424247;
+  padding: 20px;
+  font-size: 20px;
+}
+.nav_container .nav_navbar i {
+  display: none;
+  font-size: 30px;
+}
+.banner_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png"),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-size: cover;
+  margin: 60px 135px;
+  border-radius: 16px;
+}
+.banner_description {
+  max-width: 1170px;
+  text-align: center;
+  padding: 0px 40px;
+  margin-top: 106px;
+}
+.banner_section .banner_description .banner_description_heading {
+  color: #fff;
+  font-weight: 800;
+  font-size: 4rem;
+}
+.banner_section .banner_description .banner_description_para {
+  color: #fff;
+  padding: 30px;
+  font-size: 1rem;
+}
+.banner_section .banner_form {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 130px;
+  padding: 20px;
+}
+.banner_form .banner_form_div {
+  background-color: #fff;
+  border-radius: 8px;
+  padding-right: 20px;
+}
+.banner_form .banner_form_div input {
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+.banner_form .banner_form_div i {
+  color: rgba(19, 19, 24, 0.7);
+}
+.banner_form .color_btn .input_color {
+  width: 50%;
+  background-color: #ff5400;
+  border: none;
+}
+.banner_form .color_btn .input_color::placeholder {
+  color: #fff;
+  font-size: 16px;
+  padding: 3px;
+}
+.our_popular_tours {
+  max-width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 115px;
+}
+.our_popular_tours .our_popular_tours_details {
+  width: 50%;
+}
+.our_popular_tours_details li {
+  list-style: none;
+  padding: 20px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+}
+.our_popular_tours_details li i {
+  padding-right: 10px;
+  margin-bottom: 10px;
+  font-size: 5px;
+  color: #424247;
+}
+.our_popular_tours .popular_tour_section_img {
+  width: 45%;
+}
+.our_popular_tours_details .our_popular_tours_heading {
+  padding: 20px 0px;
+  font-size: 2.8rem;
+  color: #131318;
+}
+.our_popular_tours_details .color_btn {
+  margin-top: 20px;
+  font-weight: 800;
+  padding: 20px 30px;
+  font-size: 1rem;
+}
+.our_popular_tours_details .start_description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+}
+.our_popular_tours_details .end_description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+}
+.destination {
+  max-width: 1420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.destination .destination_description {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.destination .destination_title {
+  font-size: 2.5rem;
+  color: #131318;
+  font-weight: 800;
+  padding: 20px;
+}
+.destination .destination_deatails {
+  font-size: 1rem;
+  color: rgba(19, 19, 24, 0.7);
+  padding-bottom: 20px;
+}
+.destination .destination_img_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3,320px);
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+.destination_img_1,
+.destination_img_2,
+.destination_img_3,
+.destination_img_4,
+.destination_img_5,
+.destination_img_6,
+.destination_img_7 {
+  width: 100%;
+  height: 100%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 800;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+.destination .destination_img_container .destination_img_1 {
+  background-image: url("../Images/Rectangle\ 5.png");
+  grid-column: span 6;
+}
+.destination .destination_img_container .destination_img_2 {
+    background-image: url("../Images/Rectangle\ 8.png");
+    grid-column: span 6;
+}
+.destination .destination_img_container .destination_img_3 {
+    background-image: url("../Images/Rectangle\ 6.png");
+    grid-column: span 4;
+}
+.destination .destination_img_container .destination_img_4 {
+  background-image: url("../Images/Rectangle\ 7.png");
+  grid-column: span 5;
+}
+.destination .destination_img_container .destination_img_5 {
+  background-image: url("../Images/Rectangle\ 9.png");
+  grid-column: span 3;
+}
+.destination .destination_img_container .destination_img_6 {
+  background-image: url("../Images/Rectangle\ 11.png");
+  grid-column: span 5;
+}
+.destination .destination_img_container .destination_img_7 {
+  background-image: url("../Images/Rectangle\ 10.png");
+  grid-column: span 7;
+}
+@media screen and (max-width: 600px) {
+  .nav_container {
+    padding: 0;
+  }
+  .nav_container .nav_heading_details {
+    width: 80%;
+    text-align: left;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .nav_container .nav_navbar a {
+    display: none;
+  }
+  .nav_container .nav_navbar {
+    width: 20%;
+    padding-top: 15px;
+  }
+  .nav_container .nav_navbar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_section {
+    margin: 20px 20px;
+    height: 80vh;
+  }
+  .banner_section .banner_form {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner_description {
+    padding: 0;
+    margin-top: 10px;
+  }
+}
