@@ -189,7 +189,7 @@ span {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3,320px);
+  grid-template-rows: repeat(3, 320px);
   grid-auto-flow: dense;
   grid-gap: 20px;
 }
@@ -203,29 +203,29 @@ span {
   width: 100%;
   height: 100%;
 }
-.img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    font-size: 3rem;
-    font-weight: 800;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
 }
 .destination .destination_img_container .destination_img_1 {
   background-image: url("../Images/Rectangle\ 5.png");
   grid-column: span 6;
 }
 .destination .destination_img_container .destination_img_2 {
-    background-image: url("../Images/Rectangle\ 8.png");
-    grid-column: span 6;
+  background-image: url("../Images/Rectangle\ 8.png");
+  grid-column: span 6;
 }
 .destination .destination_img_container .destination_img_3 {
-    background-image: url("../Images/Rectangle\ 6.png");
-    grid-column: span 4;
+  background-image: url("../Images/Rectangle\ 6.png");
+  grid-column: span 4;
 }
 .destination .destination_img_container .destination_img_4 {
   background-image: url("../Images/Rectangle\ 7.png");
@@ -276,5 +276,34 @@ span {
   .banner_description {
     padding: 0;
     margin-top: 10px;
+  }
+  .our_popular_tours {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .our_popular_tours .our_popular_tours_details,
+  .our_popular_tours .popular_tour_section_img,
+  .destination .destination_description {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  .our_popular_tours .our_popular_tours_details{
+    padding: 0px 10px;
+    margin: 20px;
+  }
+  .destination {
+    flex-direction: column;
+  }
+  .destination .destination_img_container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .destination .destination_img_container .img{
+    width: 90%;
+    height: 40vh;
+    margin-left: 20px;
   }
 }
