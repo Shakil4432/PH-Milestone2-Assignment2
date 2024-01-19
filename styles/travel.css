@@ -505,6 +505,52 @@ span {
   top: 70%;
   transform: rotate(-25deg);
 }
+/* footer syles start from here */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+    height: 60vh;
+}
+.footer_details{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer_details .footer_heading_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 10px 0px;
+}
+.footer_details .footer_heading_details .footer_img{
+    padding-right: 10px;
+}
+.footer_details .footer_description{
+    text-align: center;
+    line-height: 30px;
+}
+.footer_details hr{
+    width: 100%;
+    border: 0.5px solid gray;
+}
+.footer_details .media_icon{
+    padding: 15px 0px 10px 0px;
+}
+.footer_details .media_icon i{
+    padding: 15px;
+    font-size: 20px;
+}
+.footer_details .condition {
+    padding: 15px 0px 10px 0px;
+}
 @media screen and (max-width: 600px) {
   .nav_container {
     padding: 0;
@@ -610,7 +656,7 @@ span {
   .newsletter .newsletter_input{
     padding: 20px;
   }
-  .newsletter .newsletter_img{
+  .newsletter .newsletter_img, .footer_details{
     width: 100%;
   }
   .newsletter .newsletter_img .newsletter_img_over_div{
